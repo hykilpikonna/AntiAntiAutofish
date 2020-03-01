@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "aaautofish",
+  "version": "${version}",
+
+  "name": "Anti Anti Autofish",
+  "description": "Autofish bypassing autofish detections.",
+  "authors": [
+    "HyDEV"
+  ],
+  "contact": {
+    "homepage": "https://hydev.org/",
+    "sources": "https://github.com/HyDevelop/AntiAntiAutofish"
+  },
+
+  "license": "MIT",
+  "icon": "assets/aaautofish/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.hydev.fabric.fish.Main"
+    ]
+  },
+  "mixins": [
+    "aaautofish.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.14.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
